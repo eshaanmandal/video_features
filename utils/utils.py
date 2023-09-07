@@ -119,8 +119,8 @@ def sanity_check(args: Union[argparse.Namespace, DictConfig]):
     real_tmp_path = args.tmp_path
     for p in subs:
         # some model use `/` e.g. ViT-B/16
-        real_output_path = os.path.join(real_output_path, p.replace("/", "_"))
-        real_tmp_path = os.path.join(real_tmp_path, p.replace("/", "_"))
+        #real_output_path = os.path.join(real_output_path, p.replace("/", "_"))
+        #real_tmp_path = os.path.join(real_tmp_path, p.replace("/", "_"))
     args.output_path = real_output_path
     args.tmp_path = real_tmp_path
 
